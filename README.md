@@ -39,3 +39,5 @@ Cancellation does not currently emit a record. Calls bypassing a Spring proxy ar
 ## Status
 
 The repository is a code showcase and starting point for independently usable libraries. The modules compile and their current tests pass, but package releases and full integration tests are still pending.
+
+[Further extraction candidates](docs/EXTRACTION-ROADMAP.md) cover version diffing, metadata queries, S3 streaming and background orchestration.
