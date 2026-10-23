@@ -24,6 +24,8 @@ The modules use Maven Central dependencies. Nothing is published to Maven or npm
 
 `JoltPipeHandler` reads a list of step specifications and runs them as a Reactor `Flux`. Step implementations live in `io.github.alex59.metainfo.jolt.steps`. `GenericHttpPort` is an interface: the host application controls network calls and credentials. HTTP retry settings are `metainfo.jolt.http.retry-max-attempts` and `metainfo.jolt.http.retry-delay-sec`.
 
+Only run specifications from trusted sources: the Groovy script step can execute code supplied by a specification.
+
 The current tests cover placeholder replacement. Before adopting it in production, add integration tests for each step type, cancellation, retry boundaries and HTTP failures.
 
 ### Audit aspect
