@@ -1,0 +1,3 @@
+*.bat text eol=crlf
+*.java text eol=lf
+*.kts text eol=lf
